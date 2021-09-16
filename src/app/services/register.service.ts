@@ -9,7 +9,7 @@ import { ConnectionService } from './connection.service';
   providedIn: 'root',
 })
 export class RegisterService {
-  private API: String = 'http://137.184.108.150:3000';
+  private API: String = 'https://api-test-angular-pwa.vercel.app';
   private db!: Dexie;
   private table!: Dexie.Table<User, any>;
 

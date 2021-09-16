@@ -30,7 +30,7 @@
   "dataGroups": [
     {
       "name": "users-api",
-      "urls": ["http://137.184.108.150:3000/*"],
+      "urls": ["https://api-test-angular-pwa.vercel.app/*"],
       "cacheConfig": {
         "strategy": "performance",
         "timeout": "5s",
