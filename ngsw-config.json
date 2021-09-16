@@ -30,7 +30,7 @@
   "dataGroups": [
     {
       "name": "users-api",
-      "urls": ["http://localhost:3000/*"],
+      "urls": ["http://137.184.108.150:3000/*"],
       "cacheConfig": {
         "strategy": "performance",
         "timeout": "5s",
