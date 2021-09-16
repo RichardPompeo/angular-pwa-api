@@ -1,0 +1,39 @@
+<div class="ui card main-form">
+  <div class="content">
+    <h1 class="header">Cadastrar Usuário</h1>
+  </div>
+  <div class="content">
+    <div class="ui large form equal width stackable grid">
+      <div class="three column row">
+        <div class="column field">
+          <label for="userName">Nome</label>
+          <input
+            type="text"
+            id="userName"
+            name="userName"
+            placeholder="Nome de usuário"
+            [(ngModel)]="user.name"
+          />
+        </div>
+
+        <div class="column field">
+          <label for="userAge">Idade</label>
+          <input
+            type="text"
+            id="userAge"
+            name="userAge"
+            placeholder="Idade do usuário"
+            [(ngModel)]="user.age"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="extra content">
+    <div class="row">
+      <button class="ui positive right floated button" (click)="add()">
+        Salvar
+      </button>
+    </div>
+  </div>
+</div>

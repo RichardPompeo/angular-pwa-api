@@ -1,0 +1,20 @@
+<div class="ui card users-list">
+  <div class="content">
+    <div class="header">Usuários</div>
+  </div>
+  <div class="content">
+    <ng-container *ngIf="users$ | async as users; else loading">
+      <ng-container *ngIf="users.length > 0; else noUsers">
+        <div *ngFor="let user of users" class="claim-row">
+          <div><strong>Nome: </strong>{{ user.name }}</div>
+          <div><strong>Idade: </strong>{{ user.age }}</div>
+          <br />
+        </div>
+      </ng-container>
+    </ng-container>
+
+    <ng-template #loading> Carregando usuários... </ng-template>
+
+    <ng-template #noUsers> Não há usuários cadastrados. </ng-template>
+  </div>
+</div>
